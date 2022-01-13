@@ -16,7 +16,7 @@ const createStudent = (name, grade) => {
 
 //calling the createStudent()function with parameters
 //and storing in a variable called student
-let student = createStudent("Lanna", "5th")
+let student = createStudent("Lanna", "5")
 console.log(student)
 
 const addMathGrade = (studentObject) => {
@@ -29,3 +29,23 @@ const addMathGrade = (studentObject) => {
 // and storing in a variable called student math
 let studentMath = addMathGrade(student)
 console.log(studentMath)
+
+const addHistoryGrade = (studentObject) => {
+    studentObject.HistoryGrade = "C"
+
+    return studentObject
+}
+
+//invoking addHistoryGrade Function with student as object
+//storing the value in the variable studentHistory
+let studentHistory = addHistoryGrade(student)
+console.log(studentHistory)
+
+const addScienceGrade = (studentObject) => {
+    studentObject.ScienceGrade = "A"
+
+    return studentObject
+}
+
+let studentScience = addScienceGrade(student)
+console.log(studentScience)
